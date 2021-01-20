@@ -8,6 +8,12 @@
     font-family: 'Raleway-Regular', Arial, sans-serif;
 }
 
+body, html {
+    margin:0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    }
+
 #reservia-header {
     margin: 2em;
     display: flex;
@@ -30,7 +36,7 @@
 #mainmenu {
     display: flex;
     justify-content: flex-end;
-    width:200em;
+    width:300em;
     padding-right: 2em;
 }
 
@@ -56,13 +62,107 @@
     font-size: 0.9em;
     font-weight: bold;
     text-decoration:none; 
-    color: #0065FC; 
+    color: #0065FC;
 }
 
-#content-body {
+.content-body {
     margin: 2em;
 }
 
 h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin-bottom: 0em;
 }
+
+.content-body p {
+    margin-top: 0.5em;
+}
+
+.searchlocation-menu {
+    height:3em;
+    width:200em;
+    margin-top: 1.5em;;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.searchlocation-icone {
+    background-color: #F2F2F2;
+    height:3em;
+    width:3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.icones {
+    width: 0.8em;
+    background: transparent;
+}
+
+.searchlocation-text {
+    border: 1px solid #F2F2F2;
+    height:3em;
+    width:15em;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1em;
+    align-items: center;
+    font-weight: bold;
+}
+
+.searchlocation-button {
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    height:3em;
+    width:6em;
+    display: flex;
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
+    font-weight: bold;
+    color:white
+}
+
+.filters p {
+    font-weight:bold;
+}
+
+.button-filter {
+    height: 3.1em;
+    background:#ffffff;
+    border: 2px solid #e4e1e1;
+    padding-right: 2em;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.button-filter-icon {
+    width: 2.8em;
+    height: 2.8em;
+    position: relative;
+    right:0.7em;
+    background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5em;
+}
+
+.filter-icones {
+    width: 1.3em;
+    filter: invert(28%) sepia(64%) saturate(5410%) hue-rotate(210deg) brightness(99%) contrast(109%);
+    position: absolute;
+}
+
