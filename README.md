@@ -1,2 +1,1 @@
-# projets-formation-frontend
-Projets Formation OpenClassrooms Front-End
+# Projet 2 du parcours Développeur Front-End OpenClassrooms : Transformez une maquette en site web 
