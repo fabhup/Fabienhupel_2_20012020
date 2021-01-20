@@ -1,0 +1,29 @@
+Projet 2 : Transformez une maquette en site web
+ - Recherche d’hébergements/activités par ville (champ de saisie recherche)
+ - Carte d’hébergement ou activité cliquable (pas de liens pour le moment)
+ - Filtres non fonctionnels mais doivent changer d’apparence au survol
+ - Menu > Hébergements et Menu > Activités = ancres qui doivent mener aux sections des pages
+
+1 maquette Desktop & 1 maquette Mobile 
+Site adapté aux tablettes -> responsive design (taille suffisante et pas d’objet coupé)
+ -> breakpoints
+Différentes taille d’images -> loader la plus adaptée en fonction de la résolution et du temps de chargement
+Police : Raleway
+Icônes : Font Awesome
+ - Couleurs : bleu #0065FC / bleu plus clair #DEEBFF / gris clair pour le fond #F2F2F2 
+
+Coder en HTML et CSS sans framework ou pré-compilateur CSS (ex: SASS)
+Utiliser Visual Studio Code (plugins Live Server & Prettier)
+Icones intégrables en HTML ou CSS mais utiliser Flexbox (voir Flexbox Froggy) ou sinon CSS GRID
+Utiliser balises sémantiques dans code, pas d’erreur ni alerte validateur W3C HTML et CSS
+Compatible Chrome et Firefox (dernières versions) 
+Séparer HTML et CSS et organiser le contenu
+Versioning avec Git (GitKraken en client Lourd : déployer sur GitHub Pages ou GitLab Pages)
+
+Livrer :
+Lien vers repository GitHub ou GitLab accessible
+Lien vers page web hébergée en ligne sur Git pour présenter la maquette
+
+Préparer une maquette de balise html avant de coder
+Norme de dev : Bem ou oocss
+Respecter la maquette
