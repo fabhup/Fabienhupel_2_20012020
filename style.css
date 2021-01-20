@@ -1,3 +1,68 @@
-p {
-    color: rgb(53, 54, 53);
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('font/Raleway-Regular.ttf');
+}
+
+*
+{
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+}
+
+#reservia-header {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.mainLogo {
+    width:5em;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+#mainmenu {
+    display: flex;
+    justify-content: flex-end;
+    width:200em;
+    padding-right: 2em;
+}
+
+#mainmenu li a { 
+    color:black; 
+    font-size: 0.9em;
+    list-style-type: none; 
+    text-decoration:none; 
+    border-top: 2px solid #F2F2F2; 
+    padding: 2em;
+}
+
+#mainmenu li a:hover {
+    color: #DEEBFF;
+}
+
+#mainmenu li a.active{
+    color: #0065FC; 
+    border-top: 2px solid #0065FC; 
+}
+
+#inscription-link a {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration:none; 
+    color: #0065FC; 
+}
+
+#content-body {
+    margin: 2em;
+}
+
+h1 {
+    font-size: 1.3em;
 }
