@@ -9,7 +9,7 @@
 }
 
 body, html {
-    margin:0 auto;
+    margin:0em;
     width: 100%;
     overflow-x: hidden;
     }
@@ -74,6 +74,10 @@ h1 {
     margin-bottom: 0em;
 }
 
+h2 {
+    font-size: 1em;
+}
+
 .content-body p {
     margin-top: 0.5em;
 }
@@ -129,8 +133,18 @@ h1 {
     color:white
 }
 
-.filters p {
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.filters-title {
     font-weight:bold;
+    margin-right: 2em;
+    margin-top: 2em;
 }
 
 .button-filter {
@@ -144,6 +158,8 @@ h1 {
     align-content: flex-start;
     font-weight: bolder;
     font-size: 1em;
+    margin-right: 2em;
+    margin-top: 2em;
 }
 
 .button-filter-icon {
@@ -166,3 +182,82 @@ h1 {
     position: absolute;
 }
 
+.info-nbresults {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-nbresults-icones-img {
+    width: 0.8em;
+    height: 0.8em;
+    filter: invert(28%) sepia(64%) saturate(5410%) hue-rotate(210deg) brightness(99%) contrast(109%);
+}
+
+.info-nbresults-icones {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1.5px solid #e4e1e1;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.info-nbresults-text {
+    margin-top: 2em;
+    margin-left: 0.8em ;
+}
+
+.reservia-footer {
+    background-color: #F2F2F2;
+    padding:2.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and ( max-width: 800px ) { 
+    .reservia-footer { 
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+     .reservia-footer ul { 
+        padding-right:0em;
+        display: inline-block;
+     }
+  }
+  
+.reservia-footer ul {
+    padding-left:0em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    padding-right: 6em;
+}
+
+.reservia-footer h2  {
+    margin-bottom: 1.3em;
+}
+
+.reservia-footer li a  {
+    text-decoration: none;
+    color:black;
+}
+
+.reservia-footer li  {
+    margin-bottom: 0.8em;
+}
