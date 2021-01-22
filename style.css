@@ -9,10 +9,20 @@
 }
 
 body, html {
-    margin:0em;
+    margin:0;
     width: 100%;
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
     }
+
+body {
+    min-height: 100%;
+    position:relative
+}
+
+.content-body {
+    padding-bottom: 2em;
+}
 
 #reservia-header {
     margin: 2em;
@@ -118,6 +128,29 @@ h2 {
     font-weight: bold;
 }
 
+.input-text {
+    border: none;
+    width:90%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1em;
+    align-items: center;
+    font-weight: bold;
+}
+
+.input-text:focus {
+    outline:none
+}
+
+.submit-button {
+    border: none;
+    color:white;
+    background-color:transparent;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
 .searchlocation-button {
     border: 1px solid #0065FC;
     background-color: #0065FC;
@@ -151,8 +184,9 @@ h2 {
     height: 3.1em;
     background:#ffffff;
     border: 2px solid #e4e1e1;
-    padding-right: 2em;
     border-radius: 2em;
+    padding-left: 3.8em;
+    padding-right: 2em;
     display: flex;
     align-items: center;
     align-content: flex-start;
@@ -160,13 +194,15 @@ h2 {
     font-size: 1em;
     margin-right: 2em;
     margin-top: 2em;
+    cursor:pointer;
+    position: relative;
 }
 
 .button-filter-icon {
-    width: 2.8em;
-    height: 2.8em;
-    position: relative;
-    right:0.7em;
+    width: 2.85em;
+    height: 2.85em;
+    position: absolute;
+    left: -0.2em;
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
     border-radius: 2em;
@@ -181,6 +217,55 @@ h2 {
     filter: invert(28%) sepia(64%) saturate(5410%) hue-rotate(210deg) brightness(99%) contrast(109%);
     position: absolute;
 }
+
+
+.button-filter:hover, .button-filter.active {
+    display:flex;
+    flex-direction: row-reverse;
+    background-color: #0065FC;
+    color: white;
+    padding-left: 2em;
+    padding-right: 3.8em;
+    /* color: white; */
+  }
+.button-filter:hover .button-filter-icon,  .button-filter.active span {
+    position: absolute;
+    left: auto;
+    right:-0.65em;
+    /* color: white; */
+  }
+
+/* .button-filter.active {
+    background-color: #0065FC;
+    color: white;
+  }
+
+.button-filter.active span {
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+  }
+
+.button-filter.active img {
+    filter: brightness(0) invert(1);
+  } */
+
+
+/* .button-filter.active, .button-filter:hover  {
+    background-color: #0065FC;
+    color: white;
+  }
+
+.button-filter.active span, .button-filter:hover span {
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+  }
+
+.button-filter.active img, .button-filter:hover img {
+    filter: brightness(0) invert(1);
+  } */
+
 
 .info-nbresults {
     display: flex;
@@ -220,13 +305,17 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     position:absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    bottom:0;
+
 }
 
-@media screen and ( max-width: 800px ) { 
+@media  screen and (max-width: 800px) { 
+
     .reservia-footer { 
+        position: relative;
+        bottom:auto;
+        left:auto;
+        height:auto;
         display: flex;
         justify-content: center;
         align-items:flex-start;
@@ -237,6 +326,10 @@ h2 {
         padding-right:0em;
         display: inline-block;
      }
+
+     .content-body {
+        padding-bottom: 0px;
+    }
   }
   
 .reservia-footer ul {
@@ -260,4 +353,26 @@ h2 {
 
 .reservia-footer li  {
     margin-bottom: 0.8em;
+}
+
+@media all and (max-device-width: 480px) {
+    .reservia-footer { 
+        position: relative;
+        bottom:auto;
+        left:auto;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+     .reservia-footer ul { 
+        padding-right:0em;
+        display: inline-block;
+     }
+
+     .content-body {
+        padding-bottom: 0px;
+    }
 }

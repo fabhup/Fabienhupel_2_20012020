@@ -26,26 +26,28 @@
         </div>
       </header>
 
-      <div class=content-body>
+      <main class=content-body>
+        
         <div>
           <h1>Trouvez votre hébergement pour des vacances de rêve
           </h1>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <div class="searchlocation-menu">
-          <div class="searchlocation-icone">
-            <img src="images/icones/map-marker-alt-solid.png" alt="marker" class="icones">
+      
+        <form method="get" id="searchlocation-form" action="" ?>
+          <div class="searchlocation-menu">
+            <div class="searchlocation-icone">
+              <img src="images/icones/map-marker-alt-solid.png" alt="marker" class="icones">
+            </div>
+            <div class="searchlocation-text">
+              <input type="text" id="searchlocation-inputcity" class="input-text" name="city"  placeholder="Ville" value="Marseille, France" />
+            </div>
+            <div class="searchlocation-button">
+              <input type="submit" name="submit" id="searchlocation-submit" class="submit-button" value="Rechercher"/>
+            </div>
           </div>
-          
-          <div class="searchlocation-text">
-            Marseille, France
-          </div>
-
-          <div class="searchlocation-button">
-            Rechercher
-          </div>
-        </div>
+        </form>
 
         <div class="filters">
           <div class="filters-title">
@@ -58,14 +60,14 @@
             Economique
           </button>
 
-          <button class="button-filter">
+          <button class="button-filter active">
             <span class="button-filter-icon">
               <img src="images/icones/child-solid.svg" class="filter-icones">
             </span>
             Familial
           </button>
 
-          <button class="button-filter">
+          <button class="button-filter active2">
             <span class="button-filter-icon">
               <img src="images/icones/heart-solid.svg" class="filter-icones">
             </span>
@@ -89,7 +91,7 @@
           </span>
         </div>
 
-      </div>
+      </main>
       
       <footer>
         <div class="reservia-footer">
