@@ -363,7 +363,7 @@ button {
     align-self: flex-start;
     justify-self: flex-start;
     text-align: left;
-    width: 6em;
+    width: 8em;
     font-size:1em;
     cursor: pointer;
 }
@@ -501,7 +501,7 @@ footer {
     flex-wrap: wrap;
 }
 
-@media  screen and (max-width: 800px) { 
+/* @media  screen and (max-width: 800px) { 
 
 
     #reservia-header {
@@ -592,27 +592,40 @@ footer {
 
 .reservia-footer li  {
     margin-bottom: 0.8em;
-}
+} */
 
 @media all and (max-device-width: 480px) {
 
+
+    body, html {
+        margin: inherit;
+        height:100%;
+        overflow-x: hidden;
+        max-width: 480px;
+        }
+
     #reservia-header {
-        margin: 2em;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-bottom: 2.5em;
+        max-width: 480px;
     }
 
     #mainmenu {
-        order: -1;
-        padding-right: 2em;
-        margin-left: none;  
+        order: 3; 
+        margin-top: 2em;
+        min-width:100%;
     }
 
     .mainLogo {
-        order:2;
         width:5em;
+        padding-left: 2em;
     }
+
+    #inscription-link {
+        padding-right: 2em;
+    }    
 
     .reservia-footer { 
         position: relative;
@@ -631,6 +644,104 @@ footer {
      }
 
      .content-body {
+        max-width: 480px;
         padding-bottom: 0px;
     }
+
+
+    #reservia-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #mainmenu {
+        order: 1;
+        padding-right: 0em;
+        margin-left: none; 
+        flex-basis: 100%;
+        margin-top: 1.5em;
+        margin-left: none;  
+        white-space:nowrap;
+    }
+
+    .menu ul {
+        display:flex;
+        justify-items: normal;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width:100%;
+    }
+    
+    .menu li {
+        display: inline-block;
+        text-align: center;
+        width:50%;
+        padding:1em;
+        border-bottom: 2px solid #F2F2F2; 
+    }
+
+    #mainmenu li.active {
+        border-bottom: 2px solid #0065FC; 
+    }
+
+    #mainmenu li a {
+        border: none; 
+        padding: 0.5em;
+    }
+    
+    #mainmenu li a.active{
+        border: none; 
+    }
+
+    .reservia-footer { 
+        max-width: 480px;
+        position: relative;
+        bottom:auto;
+        left:auto;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+     .reservia-footer ul { 
+        padding-right:0em;
+        display: inline-block;
+     }
+
+     .content-body {
+        padding: 0em;
+    }
+    
+    .zone-recherche-body {
+        padding:2em;
+    }
+
+    .hebergement-section {
+        background-color: transparent;
+        background-clip: padding-box;
+        border-radius: inherit;
+        margin:0em;
+        padding: 2em;
+        display:block;
+        max-width:100%;
+        width:100%;
+        /* justify-content: space-between;
+        align-items:flex-start;
+        flex-direction: row; */
+        /* flex-wrap: wrap; */
+    }
+
+    .top-hebergement-section {
+        order:-1;
+        background-color: hsl(0, 0%, 95%);
+        justify-content: space-between;
+        display:flex;
+    }
+
 }
