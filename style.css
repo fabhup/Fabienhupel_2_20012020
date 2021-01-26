@@ -893,7 +893,7 @@ footer {
     flex: 0 1 100%;
     }
 
-.item-activite-section, .activite-img  {
+.item-activite-section, .activite-img, .hebergement-img  {
     width:100%;
 }
 
