@@ -116,7 +116,6 @@ h2 {
 
 .searchlocation-menu {
     height:3em;
-    width:200em;
     margin-top: 1.5em;;
     border-radius: 10px;
     display: flex;
@@ -142,7 +141,7 @@ h2 {
 .searchlocation-text {
     border: 1px solid #F2F2F2;
     height:3em;
-    width:15em;
+    width:12em;
     display: flex;
     justify-content: flex-start;
     padding-left: 1em;
@@ -152,7 +151,7 @@ h2 {
 
 .input-text {
     border: none;
-    width:90%;
+    width:85%;
     font-size: 0.9em;
     display: flex;
     justify-content: flex-start;
@@ -192,7 +191,7 @@ button {
     padding-right: 1em;
     align-items: center;
     font-weight: bold;
-    color:white
+    color:white;
 }
 
 .filters {
@@ -308,12 +307,12 @@ button {
     padding: 1.5em;
     padding-top: 2em;
     padding-bottom: 2em;
-    max-width: 65%;
+    max-width: 61%;
     margin-bottom: 2em;
 }
 
 .top-hebergement-section {
-    max-width: 25%;
+    max-width: 27.5%;
   }
 
 .articles-hebergement-section, .articles-top-hebergement-section {
@@ -708,21 +707,29 @@ footer {
     margin-bottom: 0.8em;
 } */
 
-@media all and (max-device-width: 480px) {
+@media screen and (max-device-width: 1150px),
+       screen and (max-width: 1150px)  {
+    .activite-img  img, .activite-article {
+        width:13.5em;
+    }
+}
+
+@media screen and (max-device-width: 950px),
+       screen and (max-width: 950px)  {
 
 
     body, html {
         margin: inherit;
         height:100%;
         overflow-x: hidden;
-        max-width: 480px;
+        max-width: inherit;
         }
 
     #reservia-header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        max-width: 480px;
+        max-width: inherit;
     }
 
     #mainmenu {
@@ -743,12 +750,15 @@ footer {
         color:transparent;
     }
 
+    .searchlocation-text {
+        width:80%;
+    }
     .searchlocation-button {
         border-radius: 10px 10px 10px 10px;
         height:3em;
         width:2em;
         position:relative;
-        left: -1em;
+        left: -0.5em;
         padding-left: 0.5em;
         padding-right: 0.5em;
         align-items: center;
@@ -781,7 +791,7 @@ footer {
      }
 
      .content-body {
-        max-width: 480px;
+        max-width: inherit;
         padding-bottom: 0px;
     }
 
@@ -856,7 +866,7 @@ footer {
     }
     
     .zone-recherche-body {
-        padding:1em;
+        padding: 1em;
     }
 
 .hebergement-section, .top-hebergement-section, .activite-section {
@@ -883,9 +893,15 @@ footer {
     flex: 0 1 100%;
     }
 
-.item-activite-section img, .item-activite-section  {
-    flex: 0 1 100%;
-    height: 10em;
+.item-activite-section, .activite-img  {
+    width:100%;
+}
+
+.item-activite-section:first-child img, .item-activite-section:last-child img,
+.item-activite-section:nth-child(2) img , .item-activite-section:nth-child(3) img,
+.item-activite-section:nth-child(4) img, .item-activite-section:nth-child(5) img {
+    flex: 1 1 100%;
+    height: 8em;
     width: 100%;
     }
 
