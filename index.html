@@ -1,381 +1,375 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <header>
-        <div id="reservia-header">
-          <div class="mainLogo">
-          <svg width="97" height="45" xmlns="http://www.w3.org/2000/svg">
-            <image xlink:href="images/logo/Reservia.svg" src="images/logo/Reservia@3x.png"/>
-          </svg>          
-          </div>
-          <nav id="mainmenu" class="menu">
-            <ul id="mainmenu-list" class="menu">
-              <li class="menu active"><a href="#hebergements" class="active">Hébergements</a></li>
-              <li class="menu"><a href="#activites">Activités</a></li>
-            </ul>
-          </nav>
-          <div id="inscription-link">
-            <a href>S'inscrire</a>
-          </div>
+    <header>
+      <div class="reservia-header">
+        <div class="mainLogo">
+        <svg width="97" height="45" xmlns="http://www.w3.org/2000/svg">
+          <image xlink:href="images/logo/Reservia.svg" width="97" height="45" />
+        </svg>          
         </div>
-      </header>
-
-      <div class="content-body">
-        
-        <div class="zone-recherche-body">
-          <div>
-            <h1>Trouvez votre hébergement pour des vacances de rêve
-            </h1>
-            <p>En plein centre ville ou en pleine nature</p>
-          </div>
-
-        
-          <form method="get" id="searchlocation-form" action="" ?>
-            <div class="searchlocation-menu">
-              <div class="searchlocation-icone">
-                <img src="images/icones/map-marker-alt-solid.png" alt="marker" class="icones">
-              </div>
-              <div class="searchlocation-text">
-                <input type="text" id="searchlocation-inputcity" class="input-text" name="city"  placeholder="Ville" value="Marseille, France" />
-              </div>
-              <div class="searchlocation-button">
-                <input type="submit" name="submit" id="searchlocation-submit" class="submit-button" value="Rechercher"/>
-              </div>
-            </div>
-          </form>
-
-          <div class="filters">
-            <div class="filters-title">
-              <h2>Filtres</h2>
-            </div>
-            <button class="button-filter">
-              <span class="button-filter-icon">
-                <img src="images/icones/money-bill-wave-solid.svg" class="filter-icones">
-              </span>
-              Économique
-            </button>
-
-            <button class="button-filter active">
-              <span class="button-filter-icon">
-                <img src="images/icones/child-solid.svg" class="filter-icones">
-              </span>
-              Familial
-            </button>
-
-            <button class="button-filter active2">
-              <span class="button-filter-icon">
-                <img src="images/icones/heart-solid.svg" class="filter-icones">
-              </span>
-              Romantique
-            </button>
-
-            <button class="button-filter">
-              <span class="button-filter-icon">
-                <img src="images/icones/dog-solid.svg" class="filter-icones">
-              </span>
-              Animaux autorisés
-            </button>
-          </div>
-
-          <div class="info-nbresults">
-            <div class="info-nbresults-icones">
-              <img src="images/icones/info-solid.svg" class="info-nbresults-icones-img">  
-            </div>
-            <span class="info-nbresults-text">
-              Plus de 500 logements sont disponibles dans cette ville
-            </span>
-          </div>
+        <nav id="mainmenu" class="menu">
+          <ul id="mainmenu-list" class="menu">
+            <li class="menu active"><a href="#hebergements" class="active">Hébergements</a></li>
+            <li class="menu"><a href="#activites">Activités</a></li>
+          </ul>
+        </nav>
+        <div id="inscription-link" class="inscription-link">
+          <a href="#">S'inscrire</a>
         </div>
-
-        <main class="main-content">
-          <section id="hebergements" class="hebergement-section">
-            <div class="header-hebergement-section">
-              <h1 class="title-hebergement-section">Hébergements à Marseille</h1>
-            </div>
-            <div class="articles-hebergement-section">
-              <a href="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="item-hebergement-section">
-                <article class="hebergement-article">
-                    <div class="hebergement-img">
-                      <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="hebergement-img">
-                    </div>
-                    <div class="hebergement-description">
-                      <h2>Auberge la Cannebière</h2>
-                      <p>Nuit à partir de 25€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-empty"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="item-hebergement-section">
-                <article class="hebergement-article">
-                    <div class="hebergement-img">
-                      <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="hebergement-img">
-                    </div>
-                    <div class="hebergement-description">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="item-hebergement-section">
-                <article class="hebergement-article">
-                    <div class="hebergement-img">
-                      <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="hebergement-img">
-                    </div>
-                    <div class="hebergement-description">
-                      <h2>Hôtel les mouettes</h2>
-                      <p>Nuit à partir de 76€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-empty"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="item-hebergement-section">
-                <article class="hebergement-article">
-                    <div class="hebergement-img">
-                      <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="hebergement-img">
-                    </div>
-                    <div class="hebergement-description">
-                      <h2>Hôtel de la mer</h2>
-                      <p>Nuit à partir de 46€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-empty"></li>
-                        <li class="star-empty"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="item-hebergement-section">
-                <article class="hebergement-article">
-                    <div class="hebergement-img">
-                      <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="hebergement-img">
-                    </div>
-                    <div class="hebergement-description">
-                      <h2>Auberge Le Panier</h2>
-                      <p>Nuit à partir de 23€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-empty"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="item-hebergement-section">
-                <article class="hebergement-article">
-                    <div class="hebergement-img">
-                      <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="hebergement-img">
-                    </div>
-                    <div class="hebergement-description">
-                      <h2>Hôtel chez Amina</h2>
-                      <p>Nuit à partir de 96€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-            </div>
-            <div class="footer-hebergement-section">
-              <button class="autres-hebergements">Afficher plus</button>
-            </div>
-          </section>
-
-          <section id="top-hebergements" class="top-hebergement-section">
-            <div class="header-top-hebergement-section">
-              <h1 class="title-top-hebergement-section">Les plus populaires</h1>
-              <img src="images/icones/chart-line-solid.svg" class="icone-top-hebergement">
-            </div>  
-            <div class="articles-top-hebergement-section">
-              <a href="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="item-top-hebergement-section">
-                <article class="hebergement-article top-hebergement-article">
-                    <div class="top-hebergement-img">
-                      <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="top-hebergement-img">
-                    </div>
-                    <div class="hebergement-description top-hebergement-description">
-                      <h2>Hôtel Le soleil du matin</h2>
-                      <p>Nuit à partir de 128€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" class="item-top-hebergement-section">
-                <article class="hebergement-article top-hebergement-article">
-                    <div class="top-hebergement-img">
-                      <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="top-hebergement-img">
-                    </div>
-                    <div class="hebergement-description top-hebergement-description">
-                      <h2>Au cœur de l'eau<br>Chambres d'hôtes</h2>
-                      <p>Nuit à partir de 71€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-empty"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-              <a href="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="item-top-hebergement-section">
-                <article class="hebergement-article top-hebergement-article">
-                    <div class="top-hebergement-img">
-                      <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="top-hebergement-img">
-                    </div>
-                    <div class="hebergement-description top-hebergement-description">
-                      <h2>Hôtel Tout bleu et Blanc</h2>
-                      <p>Nuit à partir de 68€</p>
-                      <ol class="note-stars">
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-full"></li>
-                        <li class="star-empty"></li>
-                      </ol>
-                    </div>
-                </article>
-              </a>
-            </div>
-          </section>
-
-          <section id="activites" class="activite-section">
-            <div class="header-activite-section">
-              <h1 class="title-activite-section">Activités à Marseille</h1>
-            </div>
-            <div class="articles-activite-section">
-              <a href="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="item-activite-section">
-                <article class="activite-article">
-                    <div class="activite-img">
-                      <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="activite-img">
-                    </div>
-                    <div class="activite-description">
-                      <h2>Vieux port</h2>
-                    </div>
-                </article>
-              </a>
-              <a href="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="item-activite-section">
-                <article class="activite-article">
-                    <div class="activite-img">
-                      <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="activite-img">
-                    </div>
-                    <div class="activite-description">
-                      <h2>Fort de Pomègues</h2>
-                    </div>
-                </article>
-              </a>
-              <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="item-activite-section">
-                <article class="activite-article">
-                    <div class="activite-img">
-                      <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="activite-img">
-                    </div>
-                    <div class="activite-description">
-                      <h2>Iles du Frioul</h2>
-                    </div>
-                </article>
-              </a>
-              <a href="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="item-activite-section">
-                <article class="activite-article">
-                    <div class="activite-img">
-                      <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="activite-img">
-                    </div>
-                    <div class="activite-description">
-                      <h2>Parc National des Calanques</h2>
-                    </div>
-                </article>
-              </a>
-              <a href="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplashjpg" class="item-activite-section">
-                <article class="activite-article">
-                    <div class="activite-img">
-                      <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="activite-img">
-                    </div>
-                    <div class="activite-description">
-                      <h2>Notre-Dame-de-la-Garde</h2>
-                    </div>
-                </article>
-              </a>
-              <a href="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="item-activite-section">
-                <article class="activite-article">
-                    <div class="activite-img">
-                      <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="activite-img">
-                    </div>
-                    <div class="activite-description">
-                      <h2>Parc Longchamp</h2>
-                    </div>
-                </article>
-              </a>
-            </div>
-          </section>
-
-
-
-
-        </main>
       </div>
-      
-      <footer>
-        <div class="reservia-footer">
-          <div class="reservia-a-propos">
-            <h2 class="category-footer">A propos</h2>
-              <ul class="footer-list-apropos">
-                <li><a href="#fonctionnement-site">Fonctionnement du site</a></li>
-                <li><a href="#conditions-vente">Conditions générales de vente</a></li>
-                <li><a href="#donnees-confidentialite">Données et confidentialité</a></li>
-              </ul>
-          </div>
-          <div class="reservia-nos-hebergements">
-            <h2 class="category-footer">Nos hébergements</h2>
-              <ul class="footer-list-noshebergements">
-                <li><a href="#charte-qualite">Charte qualité</a></li>
-                <li><a href="#soumettre-hotel">Soumettre votre hôtel</a></li>
-              </ul>
-          </div>
-          <div class="reservia-assistance">
-            <h2 class="category-footer">Assistance</h2>
-              <ul class="footer-assistance">
-                <li><a href="#centre-aide">Centre d'aide</a></li>
-                <li><a href="#contacts">Nous contacter</a></li>
-              </ul>
-          </div>
+    </header>
+
+    <main class="content-body">
+      <div class="zone-recherche-body">
+        <div>
+          <h1>Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p>En plein centre ville ou en pleine nature</p>
         </div>
-      </footer>
-    </div>
+
+      
+        <form method="get" id="searchlocation-form" action="#">
+          <div class="searchlocation-menu">
+            <div class="searchlocation-icone">
+              <img src="images/icones/map-marker-alt-solid.png" alt="icone-marker" class="icones">
+            </div>
+            <div class="searchlocation-text">
+              <input type="text" id="searchlocation-inputcity" class="input-text" name="city"  placeholder="Ville" value="Marseille, France" />
+            </div>
+            <div class="searchlocation-button">
+              <input type="submit" name="submit" id="searchlocation-submit" class="submit-button" value="Rechercher"/>
+            </div>
+          </div>
+        </form>
+
+        <div class="filters">
+          <div class="filters-title">
+            <h2>Filtres</h2>
+          </div>
+          <button class="button-filter">
+            <span class="button-filter-icon">
+              <img src="images/icones/money-bill-wave-solid.svg" class="filter-icones" alt="icone-money-bill">
+            </span>
+            Économique
+          </button>
+
+          <button class="button-filter">
+            <span class="button-filter-icon">
+              <img src="images/icones/child-solid.svg" class="filter-icones" alt="icone-family">
+            </span>
+            Familial
+          </button>
+
+          <button class="button-filter">
+            <span class="button-filter-icon">
+              <img src="images/icones/heart-solid.svg" class="filter-icones" alt="icone-heart" >
+            </span>
+            Romantique
+          </button>
+
+          <button class="button-filter">
+            <span class="button-filter-icon">
+              <img src="images/icones/dog-solid.svg" class="filter-icones" alt="icone-dog" >
+            </span>
+            Animaux autorisés
+          </button>
+        </div>
+
+        <div class="info-nbresults">
+          <div class="info-nbresults-icones">
+            <img src="images/icones/info-solid.svg" class="info-nbresults-icones-img" alt="icone-info" >  
+          </div>
+          <span class="info-nbresults-text">
+            Plus de 500 logements sont disponibles dans cette ville
+          </span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <section id="hebergements" class="hebergement-section">
+          <div class="header-hebergement-section">
+            <h2 class="title-hebergement-section">Hébergements à Marseille</h2>
+          </div>
+          <div class="articles-hebergement-section">
+            <a href="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="item-hebergement-section">
+              <article class="hebergement-article">
+                  <div class="hebergement-img">
+                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="hebergement-img" alt="Auberge la Cannebière">
+                  </div>
+                  <div class="hebergement-description">
+                    <h2>Auberge la Cannebière</h2>
+                    <p>Nuit à partir de 25€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-empty"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="item-hebergement-section">
+              <article class="hebergement-article">
+                  <div class="hebergement-img">
+                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="hebergement-img" alt="Hôtel du port">
+                  </div>
+                  <div class="hebergement-description">
+                    <h2>Hôtel du port</h2>
+                    <p>Nuit à partir de 52€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="item-hebergement-section">
+              <article class="hebergement-article">
+                  <div class="hebergement-img">
+                    <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="hebergement-img" alt="Hôtel les mouettes">
+                  </div>
+                  <div class="hebergement-description">
+                    <h2>Hôtel les mouettes</h2>
+                    <p>Nuit à partir de 76€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-empty"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="item-hebergement-section">
+              <article class="hebergement-article">
+                  <div class="hebergement-img">
+                    <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="hebergement-img" alt="Hôtel de la mer">
+                  </div>
+                  <div class="hebergement-description">
+                    <h2>Hôtel de la mer</h2>
+                    <p>Nuit à partir de 46€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-empty"></li>
+                      <li class="star-empty"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="item-hebergement-section">
+              <article class="hebergement-article">
+                  <div class="hebergement-img">
+                    <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="hebergement-img" alt="Auberge Le Panier">
+                  </div>
+                  <div class="hebergement-description">
+                    <h2>Auberge Le Panier</h2>
+                    <p>Nuit à partir de 23€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-empty"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="item-hebergement-section">
+              <article class="hebergement-article">
+                  <div class="hebergement-img">
+                    <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="hebergement-img" alt="Hôtel chez Amina">
+                  </div>
+                  <div class="hebergement-description">
+                    <h2>Hôtel chez Amina</h2>
+                    <p>Nuit à partir de 96€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+          </div>
+          <div class="footer-hebergement-section">
+            <button class="autres-hebergements">Afficher plus</button>
+          </div>
+        </section>
+
+        <section id="top-hebergements" class="top-hebergement-section">
+          <div class="header-top-hebergement-section">
+            <h2 class="title-top-hebergement-section">Les plus populaires</h2>
+            <img src="images/icones/chart-line-solid.svg" class="icone-top-hebergement" alt="icone-top">
+          </div>  
+          <div class="articles-top-hebergement-section">
+            <a href="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="item-top-hebergement-section">
+              <article class="hebergement-article top-hebergement-article">
+                  <div class="top-hebergement-img">
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="top-hebergement-img"  alt="Hôtel Le soleil du matin">
+                  </div>
+                  <div class="hebergement-description top-hebergement-description">
+                    <h2>Hôtel Le soleil du matin</h2>
+                    <p>Nuit à partir de 128€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" class="item-top-hebergement-section">
+              <article class="hebergement-article top-hebergement-article">
+                  <div class="top-hebergement-img">
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="top-hebergement-img" alt="Au cœur de l'eau - Chambres d'hôtes">
+                  </div>
+                  <div class="hebergement-description top-hebergement-description">
+                    <h2>Au cœur de l'eau<br>Chambres d'hôtes</h2>
+                    <p>Nuit à partir de 71€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-empty"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+            <a href="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="item-top-hebergement-section">
+              <article class="hebergement-article top-hebergement-article">
+                  <div class="top-hebergement-img">
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="top-hebergement-img" alt="Hôtel Tout bleu et Blanc">
+                  </div>
+                  <div class="hebergement-description top-hebergement-description">
+                    <h2>Hôtel Tout bleu et Blanc</h2>
+                    <p>Nuit à partir de 68€</p>
+                    <ol class="note-stars">
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-full"></li>
+                      <li class="star-empty"></li>
+                    </ol>
+                  </div>
+              </article>
+            </a>
+          </div>
+        </section>
+
+        <section id="activites" class="activite-section">
+          <div class="header-activite-section">
+            <h2 class="title-activite-section">Activités à Marseille</h2>
+          </div>
+          <div class="articles-activite-section">
+            <a href="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="item-activite-section">
+              <article class="activite-article">
+                  <div class="activite-img">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="activite-img" alt="Vieux port">
+                  </div>
+                  <div class="activite-description">
+                    <h2>Vieux port</h2>
+                  </div>
+              </article>
+            </a>
+            <a href="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="item-activite-section">
+              <article class="activite-article">
+                  <div class="activite-img">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="activite-img" alt="Fort de Pomègues">
+                  </div>
+                  <div class="activite-description">
+                    <h2>Fort de Pomègues</h2>
+                  </div>
+              </article>
+            </a>
+            <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="item-activite-section">
+              <article class="activite-article">
+                  <div class="activite-img">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="activite-img" alt="Iles du Frioul">
+                  </div>
+                  <div class="activite-description">
+                    <h2>Iles du Frioul</h2>
+                  </div>
+              </article>
+            </a>
+            <a href="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="item-activite-section">
+              <article class="activite-article">
+                  <div class="activite-img">
+                    <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="activite-img" alt="Parc National des Calanques">
+                  </div>
+                  <div class="activite-description">
+                    <h2>Parc National des Calanques</h2>
+                  </div>
+              </article>
+            </a>
+            <a href="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplashjpg" class="item-activite-section">
+              <article class="activite-article">
+                  <div class="activite-img">
+                    <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="activite-img" alt="Notre-Dame-de-la-Garde">
+                  </div>
+                  <div class="activite-description">
+                    <h2>Notre-Dame-de-la-Garde</h2>
+                  </div>
+              </article>
+            </a>
+            <a href="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="item-activite-section">
+              <article class="activite-article">
+                  <div class="activite-img">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="activite-img" alt= "Parc Longchamp">
+                  </div>
+                  <div class="activite-description">
+                    <h2>Parc Longchamp</h2>
+                  </div>
+              </article>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="reservia-footer">
+        <div class="reservia-a-propos">
+          <h2 class="category-footer">A propos</h2>
+            <ul class="footer-list-apropos">
+              <li><a href="#fonctionnement-site">Fonctionnement du site</a></li>
+              <li><a href="#conditions-vente">Conditions générales de vente</a></li>
+              <li><a href="#donnees-confidentialite">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="reservia-nos-hebergements">
+          <h2 class="category-footer">Nos hébergements</h2>
+            <ul class="footer-list-noshebergements">
+              <li><a href="#charte-qualite">Charte qualité</a></li>
+              <li><a href="#soumettre-hotel">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div class="reservia-assistance">
+          <h2 class="category-footer">Assistance</h2>
+            <ul class="footer-assistance">
+              <li><a href="#centre-aide">Centre d'aide</a></li>
+              <li><a href="#contacts">Nous contacter</a></li>
+            </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
