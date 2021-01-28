@@ -586,7 +586,7 @@ nav li a.active{
     margin-bottom: 0.8rem;
 }
 
-@media screen and (max-width: 991px)  {
+@media screen and (min-width: 768px) and (max-width: 991px)  {
     .section-hebergements, .section-top-hebergements {
         max-width: 100%;
         background-color: #F2F2F2;
@@ -620,8 +620,8 @@ nav li a.active{
     }
 }
 
-/* media query for max-width 768px */
-@media screen and (max-width: 768px)  {
+/* media query for max-width 767px */
+@media screen and (max-width: 767px)  {
 
     body, html {
         margin: inherit;
@@ -635,6 +635,9 @@ nav li a.active{
         padding-right: 0;
     }
 
+    footer {
+        padding-left: 1rem;
+    }
     nav {
         order: 1;
         padding-right: 0rem;
@@ -714,7 +717,7 @@ nav li a.active{
         max-width: 100%;
         width: 100%;
         margin: 0rem;
-        padding: 2rem;
+        padding: 2rem 1rem 2rem 1rem;
         background-color: transparent;
         background-clip: padding-box;
         border-radius: inherit;
@@ -723,6 +726,10 @@ nav li a.active{
     .section-top-hebergements {
         order: -1;
         background-color: hsl(0, 0%, 95%);
+    }
+
+    .top-hebergement-img img {
+        height: 9em;
     }
 
     .item-hebergement-section {
