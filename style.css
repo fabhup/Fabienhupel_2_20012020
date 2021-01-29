@@ -24,13 +24,13 @@ header {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 footer {
     background-color: #F2F2F2;
-    padding: 2.5rem;
+    padding: 2rem 32px 2rem 32px;
     width: 100%;
 }
 
@@ -58,7 +58,6 @@ h1 {
 h2 {
     font-size: 1rem;
     margin: 0rem;
-    padding-right: 0.2rem;
 }
 
 h3 {
@@ -128,8 +127,8 @@ nav li a.active{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .content-body p {
@@ -309,7 +308,7 @@ nav li a.active{
 
 .main-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -322,7 +321,6 @@ nav li a.active{
     border-radius: 1rem;
     padding: 2rem 1.5rem 2rem 1.5rem;
     margin-bottom: 2rem;
-    margin-left: 0.5rem;
 }
 
 .section-hebergements {
@@ -331,8 +329,10 @@ nav li a.active{
 }
 
 .section-top-hebergements {
-    max-width: 25%;
+    max-width: 24%;
     background-color: #F2F2F2;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-activites {
@@ -369,8 +369,7 @@ nav li a.active{
 
 .articles-activite-section {
     flex-direction: column;
-    height: 24.5rem;
-    width:100%;
+    height: 25rem;
 }
 
 .section-hebergements button {
@@ -393,8 +392,8 @@ nav li a.active{
 }
 
 .item-activite-section {
-    flex-basis: 23%;
-    max-width: 23%;
+    flex-basis: 22%;
+    max-width: 22%;
 }
 
 .hebergement-article {
@@ -430,7 +429,7 @@ nav li a.active{
 }
 
 .activite-description {
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0rem 0rem 1rem 0.1rem;
 }
 
 .top-hebergement-description {
@@ -446,7 +445,7 @@ nav li a.active{
 .hebergement-description p, .hebergement-description h2, .activite-description h2 {
     margin-top: 0.5rem;
     margin-bottom: 0rem;
-    margin-left: 0.5rem;
+    margin-left: 0.4rem;
     overflow-wrap: normal;
     font-size: 0.8rem;
 }
@@ -568,7 +567,7 @@ nav li a.active{
     flex-wrap: wrap;
     flex-direction: column;
     padding-left: 0rem;
-    padding-right: 6rem;
+    padding-right: 3rem;
 }
 
 .category-footer  {
@@ -587,6 +586,7 @@ nav li a.active{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px)  {
+
     .section-hebergements, .section-top-hebergements {
         max-width: 100%;
         background-color: #F2F2F2;
@@ -596,6 +596,7 @@ nav li a.active{
         order: -1;
         max-width: 100%;
         background-color: #F2F2F2;
+        margin-left: 0;
     }
 
     .item-top-hebergement-section {
@@ -604,7 +605,6 @@ nav li a.active{
 
     .top-hebergement-article {
         flex-direction: column;
-        height: 14rem;
     }
 
     .top-hebergement-img  img {
