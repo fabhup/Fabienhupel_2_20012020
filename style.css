@@ -392,8 +392,8 @@ nav li a.active{
 }
 
 .item-activite-section {
-    flex-basis: 22%;
     max-width: 22%;
+    width: 100%;
 }
 
 .hebergement-article {
@@ -506,6 +506,9 @@ nav li a.active{
     filter: invert(97%) sepia(3%) saturate(73%) hue-rotate(277deg) brightness(90%) contrast(90%);
 }
 
+.activite-img {
+    width: 100%;
+}
 .activite-img  img {
     object-fit: cover;
     order: -1;
@@ -595,6 +598,7 @@ nav li a.active{
     .section-top-hebergements {
         order: -1;
         max-width: 100%;
+        width:100%;
         background-color: #F2F2F2;
         margin-left: 0;
     }
