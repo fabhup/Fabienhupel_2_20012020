@@ -4,7 +4,7 @@
     src: url('font/Raleway-Regular.ttf');  
 }
 
-/* general css */
+/* Global CSS parameters */
 *
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -13,6 +13,7 @@
     https://stackoverflow.com/questions/37793086/why-is-the-font-style-bold-not-correctly-applied-in-chrome-on-this-website */
 }
 
+/** Global CSS on HTML tags **/
 body, html {
     margin: 0 auto;
     overflow-x: hidden;
@@ -72,14 +73,22 @@ button {
     outline: none;
 }
 
+/** Global CSS for header elements **/
+
 .mainLogo {
     width: 5rem;
     margin-top: 2rem;
 }
 
-/* nav ul with font-size 0 to have no space between li */
 nav ul {
-    font-size: 0;
+    font-size: 0; /* (nav ul with font-size 0 to have no space between li) */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 0.9rem;
 }
 
 nav li a { 
@@ -99,16 +108,6 @@ nav li a.active{
     border-top: 2px solid #0065FC; 
 }
 
-.menu ul {
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    display: inline-block;
-    font-size: 0.9rem;
-}
-
 .inscription-link {
     margin-top: 2rem;
 }
@@ -122,6 +121,7 @@ nav li a.active{
     color: #0065FC;
 }
 
+/** Global CSS for body elements **/
 .content-body {
     max-width: 1200px;
     margin-left: auto;
@@ -135,6 +135,7 @@ nav li a.active{
     margin-top: 0.5rem;
 }
 
+/*** Global CSS for searchzone elements ***/
 .searchlocation-menu {
     height: 3rem;
     margin-top: 1.5rem;;
@@ -306,6 +307,7 @@ nav li a.active{
     margin-left: 0.8em ;
 }
 
+/*** Global CSS for main content elements ***/
 .main-content {
     display: flex;
     justify-content: flex-start;
@@ -442,16 +444,15 @@ nav li a.active{
     justify-content: flex-start;
 }
 
-.hebergement-description p, .hebergement-description h2, .activite-description h2 {
+.hebergement-description p, .hebergement-description h3, .activite-description h3 {
     margin-top: 0.5rem;
     margin-bottom: 0rem;
     margin-left: 0.4rem;
     overflow-wrap: normal;
-    font-size: 0.8rem;
 }
 
-.hebergement-description h2, .activite-description h2 {
-    font-size: 0.9rem;
+.hebergement-description p {
+    font-size: 0.8rem;
 }
 
 .hebergement-img, .top-hebergement-img {
@@ -551,7 +552,7 @@ nav li a.active{
     height: 8.5rem;
   }
 
-/* footer default css properties */
+/** Global CSS for footer elements **/
 
 .reservia-footer {
     display: flex;
@@ -588,8 +589,11 @@ nav li a.active{
     margin-bottom: 0.8rem;
 }
 
+/********************************************************************************************/
+/* Specific CSS parameters for width screen between 768px and 991 px (tablets) */
 @media screen and (min-width: 768px) and (max-width: 991px)  {
 
+    /** Specific CSS for body elements **/
     .section-hebergements, .section-top-hebergements {
         max-width: 100%;
         background-color: #F2F2F2;
@@ -619,14 +623,17 @@ nav li a.active{
         min-height: 6rem;
     }
 
+    /** Specific Css for footer elements **/
     .reservia-footer {
         flex-wrap:nowrap;
     }
 }
 
-/* media query for max-width 767px */
+/********************************************************************************************/
+/* Specific CSS parameters for width screen under 768px (smartphones) */
 @media screen and (max-width: 767px)  {
 
+    /** Specific CSS for HTML tags **/
     body, html {
         margin: inherit;
     }
@@ -650,12 +657,22 @@ nav li a.active{
         margin-top: 1.5rem; 
     }
 
+    /** Specific CSS for header elements **/
     .mainLogo {
         padding-left: 2rem;
     }
 
-    nav li.active {
-        border-bottom: 2px solid #0065FC; 
+    nav ul {
+        display: flex;
+        justify-items: normal;
+        width: 100%;
+    }
+
+    nav li {
+        text-align: center;
+        width: 50%;
+        padding: 1rem;
+        border-bottom: 2px solid #F2F2F2; 
     }
 
     nav li a {
@@ -663,10 +680,30 @@ nav li a.active{
         padding: 0.5rem;
     }
 
+    nav li.active {
+        border-bottom: 2px solid #0065FC; 
+    }
+
     nav li a.active{
         border: none; 
     }
 
+    .inscription-link {
+        padding-right: 2rem;
+    }  
+
+    /** Specific css for body elements **/
+
+    .content-body {
+        max-width: inherit;
+        padding-bottom: 0px;
+        padding: 0rem;
+    }
+    
+    .zone-recherche-body {
+        padding: 1rem;
+    }
+    
     .submit-button {
         background: url("images/icones/search-solid.svg") no-repeat center center;
         filter: invert(100%) sepia(3%) saturate(73%) hue-rotate(277deg) brightness(90%) contrast(90%);
@@ -684,37 +721,10 @@ nav li a.active{
         left: -0.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-    } 
-
-    .inscription-link {
-        padding-right: 2rem;
-    }    
+    }   
 
     .filters-title {
         width: 100%
-    }
-
-    .content-body {
-        max-width: inherit;
-        padding-bottom: 0px;
-        padding: 0rem;
-    }
-
-    .zone-recherche-body {
-        padding: 1rem;
-    }
-
-    .menu ul {
-        display: flex;
-        justify-items: normal;
-        width: 100%;
-    }
-
-    .menu li {
-        text-align: center;
-        width: 50%;
-        padding: 1rem;
-        border-bottom: 2px solid #F2F2F2; 
     }
 
     .section-hebergements, .section-top-hebergements, .section-activites {
@@ -755,6 +765,7 @@ nav li a.active{
         height: inherit;
     }
 
+    /** specific css for footer elements **/
     .reservia-footer {
         justify-content: flex-start;
         flex-direction: column; 
